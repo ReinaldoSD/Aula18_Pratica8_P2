@@ -26,7 +26,8 @@ public class TesteFormasGeometricas {
         Circulo circulo2 = new Circulo(69);
         formas2D.add(circulo2);
 
-
+        Retangulo retangulo3 = new Retangulo(1000, 7);
+        formas2D.add(retangulo3);
 
         Cubo cubo1 = new Cubo(71);
         formas3D.add(cubo1);
@@ -37,11 +38,13 @@ public class TesteFormasGeometricas {
         Cubo cubo3 = new Cubo(29);
         formas3D.add(cubo3);
 
+        Cubo cubo4 = new Cubo(69);
+        formas3D.add(cubo4);
        
         
         int r = 1;
 
-        System.out.println("===== Formas bidimensionais =====");
+        System.out.println("=============== Formas bidimensionais ===============");
         for (FormaBidimensional forma : formas2D) {
             double area = forma.calcularArea();
             double perimetro = forma.calcularPerimetro();
@@ -54,7 +57,7 @@ public class TesteFormasGeometricas {
 
         int s = 1;
 
-        System.out.println("===== Formas tridimensionais =====");
+        System.out.println("=============== Formas tridimensionais ================");
         for (FormaTridimensional forma : formas3D) {
             double area = forma.calcularArea();
             double volume = forma.calcularVolume();
